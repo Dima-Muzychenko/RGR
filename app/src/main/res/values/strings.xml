@@ -3,4 +3,6 @@
     <string name="enter_association_world">Enter association world</string>
     <string name="get_random_image">Get random image</string>
     <string name="enter_associating_word">Enter associating word</string>
+    <string name="blur">Blur</string>
+    <string name="change_photo">Change photo</string>
 </resources>
