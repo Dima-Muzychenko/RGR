@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RGR</string>
+    <string name="enter_association_world">Enter association world</string>
+    <string name="get_random_image">Get random image</string>
+    <string name="enter_associating_word">Enter associating word</string>
+</resources>
