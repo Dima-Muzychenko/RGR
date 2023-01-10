@@ -47,26 +47,50 @@
 
     <!--thumb - початкове розміщення -->
 
+
     <SeekBar
         android:id="@+id/seekBarBlur"
         android:layout_width="150dp"
         android:layout_height="28dp"
         android:layout_marginTop="20dp"
         android:max="30"
+        android:min="1"
+        android:progress="1"
         app:layout_constraintEnd_toEndOf="@id/editText"
-        app:layout_constraintStart_toEndOf="@id/blurValue"
+        app:layout_constraintStart_toEndOf="@id/blurTextView"
         app:layout_constraintTop_toBottomOf="@id/editText" />
 
-
     <TextView
-        android:id="@+id/blurValue"
-        android:layout_width="50dp"
+        android:id="@+id/blurTextView"
+        android:layout_width="60dp"
         android:layout_height="28dp"
         android:layout_marginTop="20dp"
         android:text="@string/blur"
         app:layout_constraintEnd_toStartOf="@id/seekBarBlur"
         app:layout_constraintStart_toStartOf="@id/editText"
         app:layout_constraintTop_toBottomOf="@id/editText" />
+
+    <SeekBar
+        android:id="@+id/contrastSeekBar"
+        android:layout_width="150dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:max="40"
+        android:min="1"
+        android:progress="10"
+        app:layout_constraintEnd_toEndOf="@id/editText"
+        app:layout_constraintStart_toEndOf="@id/contrastTextView"
+        app:layout_constraintTop_toBottomOf="@id/seekBarBlur"/>
+
+    <TextView
+        android:id="@+id/contrastTextView"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/contrast"
+        app:layout_constraintEnd_toStartOf="@id/contrastSeekBar"
+        app:layout_constraintStart_toStartOf="@id/editText"
+        app:layout_constraintTop_toBottomOf="@id/blurTextView"/>
 
 
 
